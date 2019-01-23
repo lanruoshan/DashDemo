@@ -2,12 +2,13 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import flask
-from app import app
+import dash
+#from app import app
 from apps import app1, app2
-from app import server
+#from app import server
 
-
-
+app = dash.Dash(__name__)
+server = app.server
 
 
 url_bar_and_content_div = html.Div([

@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output
 import flask
 from app import app
 from apps import app1, app2
-
+from app import server
 
 
 
